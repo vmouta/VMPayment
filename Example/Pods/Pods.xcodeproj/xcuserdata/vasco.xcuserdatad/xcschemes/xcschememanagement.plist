@@ -24,6 +24,16 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Stripe-Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Stripe.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>VMLogger.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -32,12 +42,27 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>5615303C4942DF4CC29EF0AF0E9EB5A7</key>
+		<key>19C87FABF64EB933D4B28B25AD6EB933</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>664B64D58E35FC1A3C5259ED71FF57B3</key>
+		<key>53CB01F0172B955E9E87F86D91D94E5E</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5599AD8783306667D80691ADB75A1A5F</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>64686CDB0C0A4953533027D07522A281</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6B83A6B5CDE78B0F114A935014F1D4EF</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -47,12 +72,7 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>ECA60D3D226B2EE05354A69E99B92057</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>F2095F7EEE26764427EE1CF5946F45ED</key>
+		<key>FCAFCD4FE946D47656F9D216CC0398DF</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -6,6 +6,7 @@ use_frameworks!
 pod "VMPayment", :path => '../../VMPayment’
 
 pod 'VMLogger'
+pod 'Stripe'
 
 target 'VMPaymentExample' do
 

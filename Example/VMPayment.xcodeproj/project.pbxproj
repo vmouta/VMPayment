@@ -15,6 +15,7 @@
 		BC62AA4E1E5442960077FC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */; };
 		BC62AA591E5442970077FC4E /* VMPaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA581E5442970077FC4E /* VMPaymentTests.swift */; };
 		BC62AA641E5442970077FC4E /* VMPaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA631E5442970077FC4E /* VMPaymentUITests.swift */; };
+		BC62AA731E54588C0077FC4E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA721E54588C0077FC4E /* TableViewController.swift */; };
 		E0CAB21D5CDCB833E142219B /* Pods_VMPaymentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79885ED7CF3579119FC3D41 /* Pods_VMPaymentTests.framework */; };
 		F41DEB2730C09E65665B0426 /* Pods_VMPaymentExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A45A6E20315D9DDF09437A /* Pods_VMPaymentExample.framework */; };
 /* End PBXBuildFile section */
@@ -57,6 +58,7 @@
 		BC62AA5F1E5442970077FC4E /* VMPaymentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMPaymentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC62AA631E5442970077FC4E /* VMPaymentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMPaymentUITests.swift; sourceTree = "<group>"; };
 		BC62AA651E5442970077FC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC62AA721E54588C0077FC4E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		DD061CED044A756508C2E71A /* Pods-VMPaymentExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentExample/Pods-VMPaymentExample.debug.xcconfig"; sourceTree = "<group>"; };
 		E79885ED7CF3579119FC3D41 /* Pods_VMPaymentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPaymentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -139,6 +141,7 @@
 			children = (
 				BC62AA431E5442960077FC4E /* AppDelegate.swift */,
 				BC62AA451E5442960077FC4E /* ViewController.swift */,
+				BC62AA721E54588C0077FC4E /* TableViewController.swift */,
 				BC62AA471E5442960077FC4E /* Main.storyboard */,
 				BC62AA4A1E5442960077FC4E /* Assets.xcassets */,
 				BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */,
@@ -450,6 +453,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				BC62AA461E5442960077FC4E /* ViewController.swift in Sources */,
+				BC62AA731E54588C0077FC4E /* TableViewController.swift in Sources */,
 				BC62AA441E5442960077FC4E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
