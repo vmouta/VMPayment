@@ -1,0 +1,20 @@
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/zucred/Specs.git'
+
+use_frameworks!
+
+pod "VMPayment", :path => '../../VMPayment’
+
+pod 'VMLogger'
+
+target 'VMPaymentExample' do
+
+end
+
+target 'VMPaymentTests' do
+  pod "VMPayment", :path => '../../VMPayment'
+end
+
+target 'VMPaymentUITests' do
+  pod "VMPayment", :path => '../../VMPayment'
+end

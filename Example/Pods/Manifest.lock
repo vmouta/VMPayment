@@ -1,0 +1,22 @@
+PODS:
+  - Alamofire (4.2.0)
+  - VMLogger (0.4.1):
+    - Alamofire (~> 4.2.0)
+  - VMPayment (0.0.1)
+
+DEPENDENCIES:
+  - VMLogger
+  - VMPayment (from `../../VMPayment`)
+
+EXTERNAL SOURCES:
+  VMPayment:
+    :path: ../../VMPayment
+
+SPEC CHECKSUMS:
+  Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  VMLogger: 8ef04481eefd355f406cf8e5a96bd32fa9da4803
+  VMPayment: 205053b8f1821c6fcbb2bab0dc597d4d50eb90fc
+
+PODFILE CHECKSUM: 73c95acd550deae2d1d0be850982be38deef3b1e
+
+COCOAPODS: 1.2.0.beta.3

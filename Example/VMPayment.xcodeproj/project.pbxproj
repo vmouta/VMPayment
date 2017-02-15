@@ -1,0 +1,735 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		067DC02F82994065A18E2ECC /* Pods_VMPaymentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A246EB03C2427F543A089E /* Pods_VMPaymentUITests.framework */; };
+		BC62AA441E5442960077FC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA431E5442960077FC4E /* AppDelegate.swift */; };
+		BC62AA461E5442960077FC4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA451E5442960077FC4E /* ViewController.swift */; };
+		BC62AA491E5442960077FC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA471E5442960077FC4E /* Main.storyboard */; };
+		BC62AA4B1E5442960077FC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA4A1E5442960077FC4E /* Assets.xcassets */; };
+		BC62AA4E1E5442960077FC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */; };
+		BC62AA591E5442970077FC4E /* VMPaymentTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA581E5442970077FC4E /* VMPaymentTests.swift */; };
+		BC62AA641E5442970077FC4E /* VMPaymentUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA631E5442970077FC4E /* VMPaymentUITests.swift */; };
+		E0CAB21D5CDCB833E142219B /* Pods_VMPaymentTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79885ED7CF3579119FC3D41 /* Pods_VMPaymentTests.framework */; };
+		F41DEB2730C09E65665B0426 /* Pods_VMPaymentExample.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 32A45A6E20315D9DDF09437A /* Pods_VMPaymentExample.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BC62AA551E5442960077FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC62AA381E5442960077FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC62AA3F1E5442960077FC4E;
+			remoteInfo = VMPayment;
+		};
+		BC62AA601E5442970077FC4E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BC62AA381E5442960077FC4E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BC62AA3F1E5442960077FC4E;
+			remoteInfo = VMPayment;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F2D3001296047E45BC31702 /* Pods-VMPaymentExample.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentExample.release.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentExample/Pods-VMPaymentExample.release.xcconfig"; sourceTree = "<group>"; };
+		1F231E682E4CB0F79A9A2805 /* Pods-VMPaymentTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentTests/Pods-VMPaymentTests.debug.xcconfig"; sourceTree = "<group>"; };
+		2DD071463FFE136955834DB6 /* Pods-VMPaymentTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentTests/Pods-VMPaymentTests.release.xcconfig"; sourceTree = "<group>"; };
+		2F762524EFB6529AA9634BB6 /* Pods-VMPaymentUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentUITests/Pods-VMPaymentUITests.release.xcconfig"; sourceTree = "<group>"; };
+		32A45A6E20315D9DDF09437A /* Pods_VMPaymentExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPaymentExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		78A246EB03C2427F543A089E /* Pods_VMPaymentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPaymentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A3CCA9DDAB193C1B664E844D /* Pods-VMPaymentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentUITests/Pods-VMPaymentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC62AA401E5442960077FC4E /* VMPaymentExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMPaymentExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC62AA431E5442960077FC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BC62AA451E5442960077FC4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BC62AA481E5442960077FC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BC62AA4A1E5442960077FC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BC62AA4D1E5442960077FC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BC62AA4F1E5442960077FC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC62AA541E5442960077FC4E /* VMPaymentTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMPaymentTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC62AA581E5442970077FC4E /* VMPaymentTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMPaymentTests.swift; sourceTree = "<group>"; };
+		BC62AA5A1E5442970077FC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BC62AA5F1E5442970077FC4E /* VMPaymentUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VMPaymentUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BC62AA631E5442970077FC4E /* VMPaymentUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VMPaymentUITests.swift; sourceTree = "<group>"; };
+		BC62AA651E5442970077FC4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD061CED044A756508C2E71A /* Pods-VMPaymentExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentExample/Pods-VMPaymentExample.debug.xcconfig"; sourceTree = "<group>"; };
+		E79885ED7CF3579119FC3D41 /* Pods_VMPaymentTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPaymentTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BC62AA3D1E5442960077FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F41DEB2730C09E65665B0426 /* Pods_VMPaymentExample.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62AA511E5442960077FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0CAB21D5CDCB833E142219B /* Pods_VMPaymentTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62AA5C1E5442970077FC4E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				067DC02F82994065A18E2ECC /* Pods_VMPaymentUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		06FF3241CD9772B15C88E3F4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD061CED044A756508C2E71A /* Pods-VMPaymentExample.debug.xcconfig */,
+				0F2D3001296047E45BC31702 /* Pods-VMPaymentExample.release.xcconfig */,
+				1F231E682E4CB0F79A9A2805 /* Pods-VMPaymentTests.debug.xcconfig */,
+				2DD071463FFE136955834DB6 /* Pods-VMPaymentTests.release.xcconfig */,
+				A3CCA9DDAB193C1B664E844D /* Pods-VMPaymentUITests.debug.xcconfig */,
+				2F762524EFB6529AA9634BB6 /* Pods-VMPaymentUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A46863ED0428F9F6F0E9AB98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				32A45A6E20315D9DDF09437A /* Pods_VMPaymentExample.framework */,
+				E79885ED7CF3579119FC3D41 /* Pods_VMPaymentTests.framework */,
+				78A246EB03C2427F543A089E /* Pods_VMPaymentUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BC62AA371E5442960077FC4E = {
+			isa = PBXGroup;
+			children = (
+				BC62AA421E5442960077FC4E /* VMPayment */,
+				BC62AA571E5442970077FC4E /* VMPaymentTests */,
+				BC62AA621E5442970077FC4E /* VMPaymentUITests */,
+				BC62AA411E5442960077FC4E /* Products */,
+				06FF3241CD9772B15C88E3F4 /* Pods */,
+				A46863ED0428F9F6F0E9AB98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BC62AA411E5442960077FC4E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BC62AA401E5442960077FC4E /* VMPaymentExample.app */,
+				BC62AA541E5442960077FC4E /* VMPaymentTests.xctest */,
+				BC62AA5F1E5442970077FC4E /* VMPaymentUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC62AA421E5442960077FC4E /* VMPayment */ = {
+			isa = PBXGroup;
+			children = (
+				BC62AA431E5442960077FC4E /* AppDelegate.swift */,
+				BC62AA451E5442960077FC4E /* ViewController.swift */,
+				BC62AA471E5442960077FC4E /* Main.storyboard */,
+				BC62AA4A1E5442960077FC4E /* Assets.xcassets */,
+				BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */,
+				BC62AA4F1E5442960077FC4E /* Info.plist */,
+			);
+			path = VMPayment;
+			sourceTree = "<group>";
+		};
+		BC62AA571E5442970077FC4E /* VMPaymentTests */ = {
+			isa = PBXGroup;
+			children = (
+				BC62AA581E5442970077FC4E /* VMPaymentTests.swift */,
+				BC62AA5A1E5442970077FC4E /* Info.plist */,
+			);
+			path = VMPaymentTests;
+			sourceTree = "<group>";
+		};
+		BC62AA621E5442970077FC4E /* VMPaymentUITests */ = {
+			isa = PBXGroup;
+			children = (
+				BC62AA631E5442970077FC4E /* VMPaymentUITests.swift */,
+				BC62AA651E5442970077FC4E /* Info.plist */,
+			);
+			path = VMPaymentUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BC62AA3F1E5442960077FC4E /* VMPaymentExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC62AA681E5442970077FC4E /* Build configuration list for PBXNativeTarget "VMPaymentExample" */;
+			buildPhases = (
+				57A811F78F064CF37CE8A98E /* [CP] Check Pods Manifest.lock */,
+				BC62AA3C1E5442960077FC4E /* Sources */,
+				BC62AA3D1E5442960077FC4E /* Frameworks */,
+				BC62AA3E1E5442960077FC4E /* Resources */,
+				C99E63B88C38B547117B61FE /* [CP] Embed Pods Frameworks */,
+				11116D2E159CA289D66454DD /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMPaymentExample;
+			productName = VMPayment;
+			productReference = BC62AA401E5442960077FC4E /* VMPaymentExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BC62AA531E5442960077FC4E /* VMPaymentTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC62AA6B1E5442970077FC4E /* Build configuration list for PBXNativeTarget "VMPaymentTests" */;
+			buildPhases = (
+				21C7B2DB8C7C47C9A7C7AC47 /* [CP] Check Pods Manifest.lock */,
+				BC62AA501E5442960077FC4E /* Sources */,
+				BC62AA511E5442960077FC4E /* Frameworks */,
+				BC62AA521E5442960077FC4E /* Resources */,
+				C53F892F23F7065579E1AFA1 /* [CP] Embed Pods Frameworks */,
+				1D2D72A7F4102810F660E303 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC62AA561E5442960077FC4E /* PBXTargetDependency */,
+			);
+			name = VMPaymentTests;
+			productName = VMPaymentTests;
+			productReference = BC62AA541E5442960077FC4E /* VMPaymentTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		BC62AA5E1E5442970077FC4E /* VMPaymentUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BC62AA6E1E5442970077FC4E /* Build configuration list for PBXNativeTarget "VMPaymentUITests" */;
+			buildPhases = (
+				E48B4DE204649B9ADDF5BCA8 /* [CP] Check Pods Manifest.lock */,
+				BC62AA5B1E5442970077FC4E /* Sources */,
+				BC62AA5C1E5442970077FC4E /* Frameworks */,
+				BC62AA5D1E5442970077FC4E /* Resources */,
+				3B61ECEAC1C1FFFA87024DD4 /* [CP] Embed Pods Frameworks */,
+				A936C51DA73DFE5F23411CDF /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BC62AA611E5442970077FC4E /* PBXTargetDependency */,
+			);
+			name = VMPaymentUITests;
+			productName = VMPaymentUITests;
+			productReference = BC62AA5F1E5442970077FC4E /* VMPaymentUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BC62AA381E5442960077FC4E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "zucred AG";
+				TargetAttributes = {
+					BC62AA3F1E5442960077FC4E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X5YNJMAC5G;
+						ProvisioningStyle = Automatic;
+					};
+					BC62AA531E5442960077FC4E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X5YNJMAC5G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC62AA3F1E5442960077FC4E;
+					};
+					BC62AA5E1E5442970077FC4E = {
+						CreatedOnToolsVersion = 8.3;
+						DevelopmentTeam = X5YNJMAC5G;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BC62AA3F1E5442960077FC4E;
+					};
+				};
+			};
+			buildConfigurationList = BC62AA3B1E5442960077FC4E /* Build configuration list for PBXProject "VMPayment" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BC62AA371E5442960077FC4E;
+			productRefGroup = BC62AA411E5442960077FC4E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BC62AA3F1E5442960077FC4E /* VMPaymentExample */,
+				BC62AA531E5442960077FC4E /* VMPaymentTests */,
+				BC62AA5E1E5442970077FC4E /* VMPaymentUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BC62AA3E1E5442960077FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC62AA4E1E5442960077FC4E /* LaunchScreen.storyboard in Resources */,
+				BC62AA4B1E5442960077FC4E /* Assets.xcassets in Resources */,
+				BC62AA491E5442960077FC4E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62AA521E5442960077FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62AA5D1E5442970077FC4E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		11116D2E159CA289D66454DD /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VMPaymentExample/Pods-VMPaymentExample-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1D2D72A7F4102810F660E303 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VMPaymentTests/Pods-VMPaymentTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		21C7B2DB8C7C47C9A7C7AC47 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		3B61ECEAC1C1FFFA87024DD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VMPaymentUITests/Pods-VMPaymentUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57A811F78F064CF37CE8A98E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A936C51DA73DFE5F23411CDF /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VMPaymentUITests/Pods-VMPaymentUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C53F892F23F7065579E1AFA1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VMPaymentTests/Pods-VMPaymentTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C99E63B88C38B547117B61FE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-VMPaymentExample/Pods-VMPaymentExample-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E48B4DE204649B9ADDF5BCA8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BC62AA3C1E5442960077FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC62AA461E5442960077FC4E /* ViewController.swift in Sources */,
+				BC62AA441E5442960077FC4E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62AA501E5442960077FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC62AA591E5442970077FC4E /* VMPaymentTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BC62AA5B1E5442970077FC4E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BC62AA641E5442970077FC4E /* VMPaymentUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BC62AA561E5442960077FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC62AA3F1E5442960077FC4E /* VMPaymentExample */;
+			targetProxy = BC62AA551E5442960077FC4E /* PBXContainerItemProxy */;
+		};
+		BC62AA611E5442970077FC4E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BC62AA3F1E5442960077FC4E /* VMPaymentExample */;
+			targetProxy = BC62AA601E5442970077FC4E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BC62AA471E5442960077FC4E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC62AA481E5442960077FC4E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BC62AA4D1E5442960077FC4E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BC62AA661E5442970077FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BC62AA671E5442970077FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BC62AA691E5442970077FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD061CED044A756508C2E71A /* Pods-VMPaymentExample.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X5YNJMAC5G;
+				INFOPLIST_FILE = VMPayment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vascomouta.VMPaymentExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		BC62AA6A1E5442970077FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F2D3001296047E45BC31702 /* Pods-VMPaymentExample.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X5YNJMAC5G;
+				INFOPLIST_FILE = VMPayment/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.vascomouta.VMPaymentExample;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		BC62AA6C1E5442970077FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F231E682E4CB0F79A9A2805 /* Pods-VMPaymentTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X5YNJMAC5G;
+				INFOPLIST_FILE = VMPaymentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vascomouta.VMPayment-Example.VMPaymentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMPayment.app/VMPayment";
+			};
+			name = Debug;
+		};
+		BC62AA6D1E5442970077FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2DD071463FFE136955834DB6 /* Pods-VMPaymentTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X5YNJMAC5G;
+				INFOPLIST_FILE = VMPaymentTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vascomouta.VMPayment-Example.VMPaymentTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VMPayment.app/VMPayment";
+			};
+			name = Release;
+		};
+		BC62AA6F1E5442970077FC4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A3CCA9DDAB193C1B664E844D /* Pods-VMPaymentUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X5YNJMAC5G;
+				INFOPLIST_FILE = VMPaymentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vascomouta.VMPayment-Example.VMPaymentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VMPayment;
+			};
+			name = Debug;
+		};
+		BC62AA701E5442970077FC4E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F762524EFB6529AA9634BB6 /* Pods-VMPaymentUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X5YNJMAC5G;
+				INFOPLIST_FILE = VMPaymentUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vascomouta.VMPayment-Example.VMPaymentUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = VMPayment;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BC62AA3B1E5442960077FC4E /* Build configuration list for PBXProject "VMPayment" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC62AA661E5442970077FC4E /* Debug */,
+				BC62AA671E5442970077FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC62AA681E5442970077FC4E /* Build configuration list for PBXNativeTarget "VMPaymentExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC62AA691E5442970077FC4E /* Debug */,
+				BC62AA6A1E5442970077FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC62AA6B1E5442970077FC4E /* Build configuration list for PBXNativeTarget "VMPaymentTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC62AA6C1E5442970077FC4E /* Debug */,
+				BC62AA6D1E5442970077FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BC62AA6E1E5442970077FC4E /* Build configuration list for PBXNativeTarget "VMPaymentUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BC62AA6F1E5442970077FC4E /* Debug */,
+				BC62AA701E5442970077FC4E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BC62AA381E5442960077FC4E /* Project object */;
+}
