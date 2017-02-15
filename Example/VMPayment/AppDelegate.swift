@@ -20,6 +20,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Stripe Configuration
         Stripe.setDefaultPublishableKey("pk_test_r9r1PemzwtQfRWhkd7jW5rB0")
         
+        
+        PayPalMobile.initializeWithClientIds(forEnvironments: [PayPalEnvironmentProduction: "YOUR_CLIENT_ID_FOR_PRODUCTION",
+                                                                PayPalEnvironmentSandbox: "YOUR_CLIENT_ID_FOR_SANDBOX"])
         // Override point for customization after application launch.
         return true
     }

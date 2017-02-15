@@ -8,8 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		067DC02F82994065A18E2ECC /* Pods_VMPaymentUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78A246EB03C2427F543A089E /* Pods_VMPaymentUITests.framework */; };
+		BC559CD01E54878900372A72 /* BraintreeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC559CCD1E54878900372A72 /* BraintreeViewController.swift */; };
+		BC559CD11E54878900372A72 /* PaypalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC559CCE1E54878900372A72 /* PaypalViewController.swift */; };
+		BC559CD21E54878900372A72 /* StripeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC559CCF1E54878900372A72 /* StripeViewController.swift */; };
 		BC62AA441E5442960077FC4E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA431E5442960077FC4E /* AppDelegate.swift */; };
-		BC62AA461E5442960077FC4E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BC62AA451E5442960077FC4E /* ViewController.swift */; };
 		BC62AA491E5442960077FC4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA471E5442960077FC4E /* Main.storyboard */; };
 		BC62AA4B1E5442960077FC4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA4A1E5442960077FC4E /* Assets.xcassets */; };
 		BC62AA4E1E5442960077FC4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */; };
@@ -45,9 +47,12 @@
 		32A45A6E20315D9DDF09437A /* Pods_VMPaymentExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPaymentExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		78A246EB03C2427F543A089E /* Pods_VMPaymentUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VMPaymentUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A3CCA9DDAB193C1B664E844D /* Pods-VMPaymentUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VMPaymentUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VMPaymentUITests/Pods-VMPaymentUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		BC559CCD1E54878900372A72 /* BraintreeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BraintreeViewController.swift; sourceTree = "<group>"; };
+		BC559CCE1E54878900372A72 /* PaypalViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PaypalViewController.swift; sourceTree = "<group>"; };
+		BC559CCF1E54878900372A72 /* StripeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StripeViewController.swift; sourceTree = "<group>"; };
+		BC559CD41E54A0E700372A72 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		BC62AA401E5442960077FC4E /* VMPaymentExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VMPaymentExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BC62AA431E5442960077FC4E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BC62AA451E5442960077FC4E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		BC62AA481E5442960077FC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BC62AA4A1E5442960077FC4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BC62AA4D1E5442960077FC4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -139,13 +144,16 @@
 		BC62AA421E5442960077FC4E /* VMPayment */ = {
 			isa = PBXGroup;
 			children = (
+				BC559CCD1E54878900372A72 /* BraintreeViewController.swift */,
+				BC559CCE1E54878900372A72 /* PaypalViewController.swift */,
+				BC559CCF1E54878900372A72 /* StripeViewController.swift */,
 				BC62AA431E5442960077FC4E /* AppDelegate.swift */,
-				BC62AA451E5442960077FC4E /* ViewController.swift */,
 				BC62AA721E54588C0077FC4E /* TableViewController.swift */,
 				BC62AA471E5442960077FC4E /* Main.storyboard */,
 				BC62AA4A1E5442960077FC4E /* Assets.xcassets */,
 				BC62AA4C1E5442960077FC4E /* LaunchScreen.storyboard */,
 				BC62AA4F1E5442960077FC4E /* Info.plist */,
+				BC559CD41E54A0E700372A72 /* App-Bridging-Header.h */,
 			);
 			path = VMPayment;
 			sourceTree = "<group>";
@@ -452,9 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BC62AA461E5442960077FC4E /* ViewController.swift in Sources */,
+				BC559CD21E54878900372A72 /* StripeViewController.swift in Sources */,
 				BC62AA731E54588C0077FC4E /* TableViewController.swift in Sources */,
 				BC62AA441E5442960077FC4E /* AppDelegate.swift in Sources */,
+				BC559CD01E54878900372A72 /* BraintreeViewController.swift in Sources */,
+				BC559CD11E54878900372A72 /* PaypalViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -614,6 +624,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vascomouta.VMPaymentExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VMPayment/App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -628,6 +639,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.vascomouta.VMPaymentExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "VMPayment/App-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

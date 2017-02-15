@@ -6,13 +6,14 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12072"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Stripe View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="VMPaymentExample" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="StripeViewController" customModule="VMPaymentExample" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -20,12 +21,114 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.99489795918367352" green="0.98979591836734693" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="MM/YYYY" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Qux-d5-Tgf">
+                                <rect key="frame" x="16" y="320" width="343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="numbersAndPunctuation" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="CVC" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OLR-pv-YyW">
+                                <rect key="frame" x="16" y="348" width="343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="D3e-Gs-OqF">
+                                <rect key="frame" x="16" y="292" width="343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="emailAddress" returnKeyType="next"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jEu-yU-VJR">
+                                <rect key="frame" x="38" y="376" width="321" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="send"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUb-YN-Ix8">
+                                <rect key="frame" x="16" y="376" width="11" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.66666666669999997" green="0.66666666669999997" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Card number..." minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="A1P-pf-rUP">
+                                <rect key="frame" x="16" y="264" width="343" height="20"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="next"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jN6-QD-YQn">
+                                <rect key="frame" x="16" y="417" width="95" height="30"/>
+                                <state key="normal" title="SendPayment"/>
+                                <connections>
+                                    <action selector="SendPaymentWithSender:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FPZ-Hz-Il4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999058246612549" green="0.99999356269836426" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="A1P-pf-rUP" secondAttribute="trailing" id="0LO-7B-BE5"/>
+                            <constraint firstItem="D3e-Gs-OqF" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="0pA-XG-QaH"/>
+                            <constraint firstItem="OUb-YN-Ix8" firstAttribute="top" secondItem="OLR-pv-YyW" secondAttribute="bottom" constant="8" id="6J5-pH-Hox"/>
+                            <constraint firstItem="OLR-pv-YyW" firstAttribute="top" secondItem="Qux-d5-Tgf" secondAttribute="bottom" constant="8" id="6r1-Us-Qij"/>
+                            <constraint firstItem="D3e-Gs-OqF" firstAttribute="top" secondItem="A1P-pf-rUP" secondAttribute="bottom" constant="8" id="FV6-DZ-IP7"/>
+                            <constraint firstItem="A1P-pf-rUP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KWr-7F-61Y"/>
+                            <constraint firstItem="Qux-d5-Tgf" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Kus-1O-tMF"/>
+                            <constraint firstItem="OLR-pv-YyW" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Lbp-sa-4mr"/>
+                            <constraint firstItem="OLR-pv-YyW" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="PV7-0T-M6M"/>
+                            <constraint firstItem="jN6-QD-YQn" firstAttribute="top" secondItem="OUb-YN-Ix8" secondAttribute="bottom" constant="20" id="T3z-M6-GNy"/>
+                            <constraint firstItem="Qux-d5-Tgf" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="WCZ-WR-eOB"/>
+                            <constraint firstItem="OUb-YN-Ix8" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="WXl-GK-UDR"/>
+                            <constraint firstItem="D3e-Gs-OqF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="aPz-qo-yJN"/>
+                            <constraint firstItem="jEu-yU-VJR" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="asR-58-jdB"/>
+                            <constraint firstItem="jEu-yU-VJR" firstAttribute="leading" secondItem="OUb-YN-Ix8" secondAttribute="trailing" constant="11" id="cMg-Pg-aRJ"/>
+                            <constraint firstItem="Qux-d5-Tgf" firstAttribute="top" secondItem="D3e-Gs-OqF" secondAttribute="bottom" constant="8" id="gfL-bj-vLX"/>
+                            <constraint firstItem="jEu-yU-VJR" firstAttribute="top" secondItem="OLR-pv-YyW" secondAttribute="bottom" constant="8" id="jFP-oU-gQP"/>
+                            <constraint firstItem="A1P-pf-rUP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="jVr-75-rMP"/>
+                            <constraint firstItem="jN6-QD-YQn" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="xQw-if-Cef"/>
+                            <constraint firstItem="A1P-pf-rUP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="200" id="xY4-Lm-e4w"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="amountTextField" destination="jEu-yU-VJR" id="yez-Pc-Rs0"/>
+                        <outlet property="cardNumberTextField" destination="A1P-pf-rUP" id="ZMl-iM-bQz"/>
+                        <outlet property="cvcTextField" destination="OLR-pv-YyW" id="s6c-hF-4Il"/>
+                        <outlet property="emailTextField" destination="D3e-Gs-OqF" id="ctY-65-cc6"/>
+                        <outlet property="expireDateTextField" destination="Qux-d5-Tgf" id="za6-Dg-cSW"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2036" y="526"/>
+            <point key="canvasLocation" x="2578" y="-248"/>
+        </scene>
+        <!--Paypal View Controller-->
+        <scene sceneID="dZP-c6-GVl">
+            <objects>
+                <viewController id="ymh-iM-pdc" customClass="PaypalViewController" customModule="VMPaymentExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Hp7-yA-0pX"/>
+                        <viewControllerLayoutGuide type="bottom" id="1cx-zm-HdB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="qjr-QK-ZOS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lt5-W5-3wG">
+                                <rect key="frame" x="143" y="319" width="88" height="30"/>
+                                <state key="normal" title="Buy Clothing">
+                                    <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="buyClothingAction:" destination="ymh-iM-pdc" eventType="touchUpInside" id="Isp-GX-m5q"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Lt5-W5-3wG" firstAttribute="centerX" secondItem="qjr-QK-ZOS" secondAttribute="centerX" id="J2Z-PA-7cB"/>
+                            <constraint firstItem="Lt5-W5-3wG" firstAttribute="centerY" secondItem="qjr-QK-ZOS" secondAttribute="centerY" id="drX-AH-5Oy"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="M38-aD-DeS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2577" y="310"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="tb3-vR-tXm">
@@ -53,11 +156,13 @@
                     <navigationItem key="navigationItem" id="QAc-ER-57q"/>
                     <connections>
                         <segue destination="BYZ-38-t0r" kind="show" identifier="STRIPE_PAYMENT" id="GgT-8v-RIQ"/>
+                        <segue destination="ymh-iM-pdc" kind="show" identifier="PAYPAL_PAYMENT" id="Od7-Av-11R"/>
+                        <segue destination="81h-Ae-j0A" kind="show" identifier="BRAINTREE_PAYMENT" id="48K-rp-7TV"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Y3r-jw-lYI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1056.8" y="792.95352323838085"/>
+            <point key="canvasLocation" x="1226" y="801"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="lbW-8Y-GP1">
@@ -76,6 +181,37 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jRp-tn-6Z7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="792.95352323838085"/>
+        </scene>
+        <!--Braintree View Controller-->
+        <scene sceneID="rl5-Vk-td3">
+            <objects>
+                <viewController id="81h-Ae-j0A" customClass="BraintreeViewController" customModule="VMPaymentExample" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4ln-nB-L4k"/>
+                        <viewControllerLayoutGuide type="bottom" id="Qd9-UJ-HDN"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XYa-7W-azl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrp-cq-Lcw">
+                                <rect key="frame" x="157.5" y="318.5" width="60" height="30"/>
+                                <state key="normal" title="Payment"/>
+                                <connections>
+                                    <action selector="SendPaymentWithSender:" destination="81h-Ae-j0A" eventType="touchUpInside" id="mCL-qc-zJR"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hrp-cq-Lcw" firstAttribute="centerX" secondItem="XYa-7W-azl" secondAttribute="centerX" id="Es2-ri-Ejw"/>
+                            <constraint firstItem="hrp-cq-Lcw" firstAttribute="centerY" secondItem="XYa-7W-azl" secondAttribute="centerY" id="xC9-uW-4hF"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f4n-Xo-gya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2576.8000000000002" y="1025.9370314842579"/>
         </scene>
     </scenes>
 </document>

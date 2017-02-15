@@ -10,7 +10,7 @@ import UIKit
 
 class TableViewController: UITableViewController {
     
-    var pymentServices = ["Stripe":"STRIPE_PAYMENT"]
+    var pymentServices = ["Stripe":"STRIPE_PAYMENT", "Paypal":"PAYPAL_PAYMENT", "Braintree":"BRAINTREE_PAYMENT"]
     
     // MARK: - UITableViewDataSource
     override func numberOfSections(in tableView: UITableView) -> Int {

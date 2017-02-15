@@ -1,11 +1,34 @@
 PODS:
   - Alamofire (4.2.0)
+  - Braintree/Card (4.7.4):
+    - Braintree/Core
+  - Braintree/Core (4.7.4)
+  - Braintree/UnionPay (4.7.4):
+    - Braintree/Card
+    - Braintree/Core
+  - BraintreeDropIn (5.1.0):
+    - BraintreeDropIn/DropIn (= 5.1.0)
+  - BraintreeDropIn/DropIn (5.1.0):
+    - Braintree/Card (~> 4.0)
+    - Braintree/Core (~> 4.0)
+    - Braintree/UnionPay (~> 4.0)
+    - BraintreeDropIn/UIKit
+  - BraintreeDropIn/UIKit (5.1.0)
+  - CardIO (5.4.1)
+  - PayPal-iOS-SDK (2.16.1):
+    - PayPal-iOS-SDK/CardIO (= 2.16.1)
+    - PayPal-iOS-SDK/Core (= 2.16.1)
+  - PayPal-iOS-SDK/CardIO (2.16.1):
+    - CardIO (~> 5.4.1)
+  - PayPal-iOS-SDK/Core (2.16.1)
   - Stripe (9.3.0)
   - VMLogger (0.4.1):
     - Alamofire (~> 4.2.0)
   - VMPayment (0.0.1)
 
 DEPENDENCIES:
+  - BraintreeDropIn
+  - PayPal-iOS-SDK
   - Stripe
   - VMLogger
   - VMPayment (from `../../VMPayment`)
@@ -16,10 +39,14 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   Alamofire: aa2e09d871c9160ac53c90e83c68064a94e3dfbe
+  Braintree: 85b7f6300aa5238df972b32ea58adc405c8ebfdc
+  BraintreeDropIn: ad8e18bd4f3a33105b7bcd418556988ef68272bc
+  CardIO: 56983b39b62f495fc6dae9ad7cf875143df06443
+  PayPal-iOS-SDK: 774ac7de2d7c3b0ee7e8a35f8b347fd07787321b
   Stripe: 0f41a33a6fa3ac76ee668d7df3e2680c28b8ab1a
   VMLogger: 8ef04481eefd355f406cf8e5a96bd32fa9da4803
   VMPayment: 205053b8f1821c6fcbb2bab0dc597d4d50eb90fc
 
-PODFILE CHECKSUM: f4afdd8fbf7e2c56784284d3ca59d61cc22074b1
+PODFILE CHECKSUM: 2bbf6ad420fc729ad13885d25be468cd0443c50e
 
 COCOAPODS: 1.2.0.beta.3
